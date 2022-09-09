@@ -1,0 +1,154 @@
+{
+  "configById": {
+    "3D Panel!25dlynk": {
+      "autoSyncCameraState": false,
+      "autoTextBackgroundColor": true,
+      "cameraState": {
+        "distance": 39.150468749999995,
+        "perspective": true,
+        "phi": 0.7853981633974483,
+        "targetOffset": [
+          0,
+          0,
+          0
+        ],
+        "thetaOffset": 0,
+        "fovy": 0.7853981633974483,
+        "near": 0.01,
+        "far": 5000
+      },
+      "checkedKeys": [
+        "t:/map",
+        "t:/move_base/TebLocalPlannerROS/global_plan",
+        "t:/move_base/TebLocalPlannerROS/local_plan",
+        "t:/scan",
+        "t:/tf",
+        "name:Topics"
+      ],
+      "clickToPublishPoseTopic": "/move_base_simple/goal",
+      "clickToPublishPointTopic": "/clicked_point",
+      "clickToPublishPoseEstimateTopic": "/initialpose",
+      "clickToPublishPoseEstimateXDeviation": 0.5,
+      "clickToPublishPoseEstimateYDeviation": 0.5,
+      "clickToPublishPoseEstimateThetaDeviation": 0.26179939,
+      "customBackgroundColor": "#000000",
+      "diffModeEnabled": true,
+      "expandedKeys": [],
+      "followMode": "follow",
+      "modifiedNamespaceTopics": [],
+      "pinTopics": false,
+      "settingsByKey": {
+        "t:/scan": {
+          "colorMode": {
+            "mode": "rainbow",
+            "colorField": "intensity"
+          }
+        }
+      },
+      "useThemeBackgroundColor": true
+    },
+    "ImageViewPanel!3u3di5z": {
+      "cameraTopic": "/rgb/image",
+      "enabledMarkerTopics": [],
+      "mode": "fit",
+      "pan": {
+        "x": 0,
+        "y": 0
+      },
+      "rotation": 0,
+      "synchronize": false,
+      "transformMarkers": false,
+      "zoom": 1
+    },
+    "RawMessages!27ppx6m": {
+      "diffEnabled": false,
+      "diffMethod": "custom",
+      "diffTopicPath": "",
+      "showFullMessageForDiff": false,
+      "topicPath": "/odom"
+    },
+    "Plot!1nuacuc": {
+      "title": "Plot",
+      "paths": [
+        {
+          "value": "/odom.pose.pose.position.x",
+          "enabled": true,
+          "timestampMethod": "receiveTime"
+        },
+        {
+          "value": "/odom.pose.pose.position.y",
+          "enabled": true,
+          "timestampMethod": "receiveTime"
+        }
+      ],
+      "showXAxisLabels": true,
+      "showYAxisLabels": true,
+      "showLegend": false,
+      "legendDisplay": "floating",
+      "showPlotValuesInLegend": false,
+      "isSynced": true,
+      "xAxisVal": "timestamp",
+      "sidebarDimension": 240
+    },
+    "Gauge!2gei8a0": {
+      "path": "/cmd_vel.linear.x",
+      "minValue": 0,
+      "maxValue": 1,
+      "colorMap": "red-yellow-green",
+      "colorMode": "colormap",
+      "gradient": [
+        "#0000ff",
+        "#ff00ff"
+      ],
+      "reverse": false
+    },
+    "Gauge!c3n6x9": {
+      "path": "/cmd_vel.angular.z",
+      "minValue": 0,
+      "maxValue": 1,
+      "colorMap": "red-yellow-green",
+      "colorMode": "colormap",
+      "gradient": [
+        "#0000ff",
+        "#ff00ff"
+      ],
+      "reverse": false
+    },
+    "Tab!r8d3sx": {
+      "activeTabIdx": 0,
+      "tabs": [
+        {
+          "layout": {
+            "first": "3D Panel!25dlynk",
+            "second": {
+              "first": "ImageViewPanel!3u3di5z",
+              "second": {
+                "first": {
+                  "first": "RawMessages!27ppx6m",
+                  "second": "Plot!1nuacuc",
+                  "direction": "row"
+                },
+                "second": {
+                  "first": "Gauge!2gei8a0",
+                  "second": "Gauge!c3n6x9",
+                  "direction": "row"
+                },
+                "direction": "column"
+              },
+              "direction": "column"
+            },
+            "direction": "row"
+          },
+          "title": "Planning"
+        }
+      ]
+    }
+  },
+  "globalVariables": {},
+  "userNodes": {},
+  "linkedGlobalVariables": [],
+  "playbackConfig": {
+    "speed": 1
+  },
+  "layout": "Tab!r8d3sx"
+}
